@@ -1,0 +1,14 @@
+// http://stackoverflow.com/questions/1906308/wpf-bind-textbox-isenabled-to-listbox-selecteditem
+
+<TextBox MaxLength="1" Name="txtOtherKey" Margin="199,111,216,67" RenderTransformOrigin="0.491,0.417">
+    <TextBox.Style>
+        <Style>
+            <Setter Property="TextBox.IsEnabled" Value="False" />
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding ElementName=cbKey, Path=SelectedItem.Name}" Value="other">
+                    <Setter Property="TextBox.IsEnabled" Value="True" />
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </TextBox.Style>
+</TextBox>
