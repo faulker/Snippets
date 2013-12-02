@@ -1,5 +1,5 @@
 // Get Running application directory.
-System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location;
+System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location);
 
 // Change System Time
 //http://msdn.microsoft.com/en-us/library/microsoft.visualbasic.dateandtime.timeofday(v=vs.100).aspx
